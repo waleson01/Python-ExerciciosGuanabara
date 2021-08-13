@@ -5,6 +5,4 @@ print(f'Lista de Times do Brasileirão: {times}')
 print(f'Os 5 Primeiros são: {times[0:5]}')
 print(f'Os 4 últimos são: {times[-4:]}')
 print(f'Times em ordem alfabética: {sorted(times)}')
-for c in times:
-    if c == 'Chapecoense':
-        print(f'O Chapecoense está na {times.index("Chapecoense")+1}ª Posição.')
+print(f'O Chapecoense está na {times.index("Chapecoense")+1}ª Posição.')
