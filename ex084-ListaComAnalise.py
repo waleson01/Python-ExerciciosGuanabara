@@ -8,7 +8,6 @@ while True:
     dado.clear()
     qtde += 1
 
-
     resp = ' '
     while resp not in 'sn':
         resp = str(input('Deseja continuar: [S/N] ')).strip().lower()[0]
@@ -19,6 +18,7 @@ peso = list()
 print(f'Ao todo, você cadastrou {qtde} pessoas.')
 for a in range(0, len(pessoas)):
     peso.append(pessoas[a][1])
+
 print(f'O MAIOR peso é de {max(peso):.2f} foi do(a) ', end='')
 for b in range(0, len(pessoas)):
     if pessoas[b][1] >= max(peso):

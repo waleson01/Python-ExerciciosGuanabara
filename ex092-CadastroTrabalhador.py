@@ -1,0 +1,17 @@
+pessoa = dict()
+pessoa['nome'] = str(input('Nome: '))
+pessoa['nasc'] = int(input('Ano de Nascimento: '))
+pessoa['CTPS'] = int(input('CTPS (0 caso não tem): '))
+if pessoa['CTPS'] != 0:
+    pessoa['anocon'] = int(input('Ano de contratação: '))
+    pessoa['salario'] = float(input('Salario: R$'))
+    print(pessoa)
+    print(f'Nome: {pessoa["nome"]}')
+    print(f'Idade: {2022 - pessoa["nasc"]}')
+    print(f'CTPS: {pessoa["CTPS"]}')
+    print(f'Salrio: RS{pessoa["salario"]:.2f}')
+    print(f'Aposentadoria: {(pessoa["anocon"] + 35) - pessoa["nasc"] }')
+else:
+    print(f'Nome: {pessoa["nome"]}')
+    print(f'Idade: {2022 - pessoa["nasc"]}')
+    print(f'CTPS: {pessoa["CTPS"]}')
